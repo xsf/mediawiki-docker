@@ -12,3 +12,5 @@ RUN pear channel-update pear.php.net && pear upgrade --force PEAR && pear instal
 
 ADD https://extdist.wmflabs.org/dist/extensions/MobileFrontend-REL1_37-016576e.tar.gz extensions/MobileFrontend.tar.gz
 RUN tar xzf /var/www/html/extensions/MobileFrontend.tar.gz -C /var/www/html/extensions/
+ADD https://extdist.wmflabs.org/dist/extensions/DarkMode-REL1_37-8adedfd.tar.gz extensions/DarkMode.tar.gz
+RUN tar xzf /var/www/html/extensions/DarkMode.tar.gz -C /var/www/html/extensions/
