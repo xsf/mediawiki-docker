@@ -11,3 +11,4 @@ RUN set -x; \
 RUN pear channel-update pear.php.net && pear upgrade --force PEAR && pear install mail net_smtp
 
 ADD --chown=www-data:www-data ./MobileFrontend-REL1_37-c139601.tar.gz /var/www/html/extensions/
+ADD --chown=www-data:www-data ./DarkMode-REL1_37-7fdb01d.tar.gz /var/www/html/extensions/
