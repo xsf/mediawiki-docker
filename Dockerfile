@@ -10,5 +10,4 @@ RUN set -x; \
 
 RUN pear channel-update pear.php.net && pear upgrade --force PEAR && pear install mail net_smtp
 
-ADD https://extdist.wmflabs.org/dist/extensions/MobileFrontend-REL1_37-016576e.tar.gz extensions/MobileFrontend.tar.gz
-RUN tar xzf /var/www/html/extensions/MobileFrontend.tar.gz -C /var/www/html/extensions/
+ADD --chown=www-data:www-data ./MobileFrontend-REL1_37-c139601.tar.gz /var/www/html/extensions/
